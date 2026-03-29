@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 - Media Query Color Change</title>
+    <style>
+        /* Default color for the div */
+        .color-div {
+            width: 100%;
+            height: 100px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Media Queries */
+        /* For viewport width less than 300px */
+        @media (max-width: 300px) {
+            .color-div {
+                background-color: green;
+            }
+        }
+
+        /* For viewport width between 300px and 400px */
+        @media (min-width: 300px) and (max-width: 400px) {
+            .color-div {
+                background-color: pink;
+            }
+        }
+
+        /* For viewport width between 400px and 600px */
+        @media (min-width: 400px) and (max-width: 600px) {
+            .color-div {
+                background-color: red;
+            }
+        }
+
+        /* For viewport width above 600px */
+        @media (min-width: 601px) {
+            .color-div {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color-div">
+        Resize the window to see the color change!
+    </div>
+
+</body>
+</html>
