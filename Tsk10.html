@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Add Borders to Divs</title>
+    <style>
+        /* Same styles as Q1 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Add borders to divs */
+        .content div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;  /* Border added */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: lightgreen;"></div>
+        <div style="background-color: lightcoral;"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+
+</body>
+</html>
