@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Step 1: Circular div with thick border on one end */
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 12px solid #ccc;       /* light grey border all around */
+  border-top: 12px solid #3498db; /* colored border on top */
+  border-radius: 50%;             /* circular shape */
+  /* Step 2 & 3: Animation for spinning */
+  animation: spin 1s linear infinite;
+}
+
+/* Step 2: Keyframes to rotate the loader from 0deg to 360deg */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
