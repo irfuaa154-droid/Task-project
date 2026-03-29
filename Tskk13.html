@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Div on Right with Background Image</title>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-right: 100px; /* Ensures text doesn't overlap the fixed div */
+        }
+
+        /* Paragraph styling */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Content styling */
+        .content {
+            padding: 20px;
+        }
+
+        /* Styling for the fixed div */
+        .fixed-div {
+            position: fixed;  /* Fixes the div in place */
+            right: 0;         /* Position the div at the right of the page */
+            top: 50%;         /* Centers the div vertically */
+            transform: translateY(-50%); /* Fine-tunes vertical centering */
+            width: 200px;     /* Width of the div */
+            height: 300px;    /* Height of the div */
+            background-image: url('https://via.placeholder.com/200x300'); /* Add your background image here */
+            background-size: cover; /* Ensures background image covers the div */
+            background-position: center; /* Centers the background image */
+            color: white;      /* Text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;      /* Ensures the div is on top of other content */
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+
+    <div class="fixed-div">
+        Love Nature
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+
+</body>
+</html>
