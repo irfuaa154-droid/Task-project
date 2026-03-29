@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Navbar</title>
+    <style>
+        /* Navbar container */
+        nav {
+            background-color: #333; /* Dark background for the navbar */
+            overflow: hidden;
+        }
+        
+        /* Navbar links */
+        nav a {
+            float: left; /* Aligns the links horizontally */
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none; /* Removes underline */
+        }
+
+        /* Change color on hover */
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Clear floats after navbar links */
+        nav::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>
