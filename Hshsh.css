@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  background-color: blue; /* default for width above 600px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* viewport width less than 300px */
+@media (max-width: 299px) {
+  .color-box {
+    background-color: green;
+  }
+}
+
+/* viewport width between 300px and 400px */
+@media (min-width: 300px) and (max-width: 399px) {
+  .color-box {
+    background-color: pink;
+    color: black; /* better contrast for pink */
+  }
+}
+
+/* viewport width between 400px and 600px */
+@media (min-width: 400px) and (max-width: 599px) {
+  .color-box {
+    background-color: red;
+  }
+}
+
+/* width 600px and above uses default blue */
