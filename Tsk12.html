@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Content Area Height</title>
+    <style>
+        /* Same styles as Q1 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Adjust the height of the content area */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            height: 300px; /* Set a height for the content area */
+        }
+
+        .content div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        /* Different background colors with opacity */
+        .content div:nth-child(1) {
+            background-color: rgba(173, 216, 230, 0.5); /* Light Blue with opacity */
+        }
+
+        .content div:nth-child(2) {
+            background-color: rgba(144, 238, 144, 0.5); /* Light Green with opacity */
+        }
+
+        .content div:nth-child(3) {
+            background-color: rgba(240, 128, 128, 0.5); /* Light Coral with opacity */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+
+</body>
+</html>
